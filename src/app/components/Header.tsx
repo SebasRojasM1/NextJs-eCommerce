@@ -1,24 +1,34 @@
 import Navbar from '@/app/components/Navbar';
 import "@/assets/styles/Home/header.scss"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass, faUser, faHeart, faCartShopping, faCaretDown} from '@fortawesome/free-solid-svg-icons';
+import Logo from "@/assets/img/general/logoCommerce.png"
+import Image from 'next/image';
+
 
 export default function Header() {
   return (
     <header className="header">
       <div className="topbar">
         <div className="languageSelector">
-          <span>🇺🇸 USD</span>
-          <span>English</span>
+          <span>🇺🇸 USD <FontAwesomeIcon icon={faCaretDown} /></span>
+          <span>English <FontAwesomeIcon icon={faCaretDown} /></span>
         </div>
 
         <div className="logo">
-            <h1>ecomus</h1>
+          <Image
+            src={Logo}
+            alt="logo"
+            width={130}
+            height={130}
+          />
         </div>
 
         <div className="icons">
-          <i className="fa fa-search"></i>
-          <i className="fa fa-user"></i>
-          <i className="fa fa-heart"></i>
-          <i className="fa fa-shopping-cart"></i>
+          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon icon={faUser} />
+          <FontAwesomeIcon icon={faHeart} />
+          <FontAwesomeIcon icon={faCartShopping} />
         </div>
       </div>
       <Navbar />
