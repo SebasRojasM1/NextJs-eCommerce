@@ -1,7 +1,7 @@
-/* import Link from "next/link";
+import Link from "next/link";
 import '@/assets/styles/Home/seasonCollections.scss';
 import Image from "next/image";
-import womanCollection from "@/assets/img/home/WomanCollection.png";
+import womanCollection from "@/assets/img/home/WomenCollection.png";
 import menCollection from "@/assets/img/home/MenCollection.png";
 import jewelryCollection from "@/assets/img/home/JewelryCollection.png";
 import sneakersCollection from "@/assets/img/home/SneakersCollection.png";
@@ -32,7 +32,7 @@ export default function SeasonCollection() {
                 {categories.map((category, index) => (
                     <div key={index} className="category">
                         <div className="imageWrapper">
-                            <Image src={category.image} alt={`${category.name} category`} />
+                            <Image  src={category.image} alt={`${category.name} category`} />
                         </div>
                         <h3>{category.name}</h3>
                         <p>{category.items} items</p>
@@ -41,4 +41,4 @@ export default function SeasonCollection() {
             </div>
         </section>
     );
-} */
+}
