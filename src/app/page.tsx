@@ -2,6 +2,7 @@ import Header from "@/app/components/Header"
 import SeasonCollection from "@/app/components/SeasonCollection"
 // import LocationMap from "@/app/components/LocationMap"
 import DiscountSection from "@/app/components/DiscountSection"
+import AdditionalInformation from "@/app/components/AdditionalInfo"
 import BrandLogos from "@/app/components/BrandLogos"
 import Footer from "@/app/components/Footer"
 
@@ -12,6 +13,7 @@ export default function Home() {
       <SeasonCollection />
       {/* <LocationMap></LocationMap> */}
       <DiscountSection />
+      <AdditionalInformation />
       <BrandLogos />
       <Footer />
     </>
