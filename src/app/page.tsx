@@ -1,7 +1,7 @@
 import Header from "@/app/components/Header"
 import SeasonCollection from "@/app/components/SeasonCollection"
-// import LocationMap from "@/app/components/LocationMap"
 import DiscountSection from "@/app/components/DiscountSection"
+import LocationMap from "@/app/components/LocationMap"
 import AdditionalInformation from "@/app/components/AdditionalInfo"
 import BrandLogos from "@/app/components/BrandLogos"
 import Footer from "@/app/components/Footer"
@@ -11,9 +11,10 @@ export default function Home() {
     <>{/* Aqui se pondrán los componentes que harán parte del HOME, y Layout hace que sea el Home de esta pagina */}
       <Header />
       <SeasonCollection />
-      {/* <LocationMap></LocationMap> */}
+      
       <DiscountSection />
       <AdditionalInformation />
+      <LocationMap />
       <BrandLogos />
       <Footer />
     </>
