@@ -1,0 +1,81 @@
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #eef0e3;
+    max-height: 100%;
+  
+    .slide {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+  
+      .content {
+        max-width: 100%;
+        padding-left: 30px;
+  
+        .title {
+          font-size: 3rem;
+          font-weight: bold;
+          color: #2b2b2b;
+          margin-bottom: 1rem;
+        }
+  
+        .description {
+          font-size: 1.2rem;
+          color: #5f5f5f;
+          margin-bottom: 2rem;
+        }
+  
+        .ctaButton {
+          background-color: #ffffff;
+          border-radius: 4px;
+          padding: 0.6rem 1.5rem;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+          font-weight: bold;
+  
+          &:hover {
+            background-color: #f0f0f0;
+          }
+        }
+      }
+  
+      .image {
+        width: 50%;
+        display: flex;
+        display: flex;
+        justify-content: flex-end;
+  
+        .img {
+          width: 90%;
+          object-fit: cover;
+        }
+      }
+    }
+  
+    .dots {
+      position: relative;
+      top: 50px;
+      z-index: 2;
+      display: flex;
+      gap: 0.5rem;
+  
+      .dot {
+        padding: 4px;
+        background-color: #8e9085;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease;
+  
+        &.active {
+          padding: 0 15px;
+          border-radius: 35%;
+          background-color: black;
+        }
+      }
+    }
+  }

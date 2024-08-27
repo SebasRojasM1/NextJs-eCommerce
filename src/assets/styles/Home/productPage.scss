@@ -4,21 +4,23 @@
     padding: 20px;
   
     .imageGallery {
-      width: 60%;
+      width: 50%;
+      display: flex;
   
-      img {
-        width: 60%;
-        border-radius: 8px;
+      .main-gallery{
+        width: 100%;
       }
-  
+
       .thumbnailGallery {
         display: flex;
-        margin-top: 10px;
+        width: 15%;
+        flex-direction: column;
+        margin-right: 10px;
   
         img {
-          width: 20%;
-          margin-right: 5px;
+          width: 100%;
           border-radius: 4px;
+          margin-bottom: 10px;
         }
       }
     }

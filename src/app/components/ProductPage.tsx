@@ -15,7 +15,7 @@ import MasterCardLogo from "@/assets/img/home/logos/MasterCardLogo.svg"
 import PaypalLogo from "@/assets/img/home/logos/PaypalLogo.png"
 import VisaLogo from "@/assets/img/home/logos/visaLogo.png"
 
-const ProductPage: React.FC = () => {
+export default function ProductPage() {
   const [selectedColor, setSelectedColor] = useState<string>("beige");
   const [selectedSize, setSelectedSize] = useState<string>("S");
   const [quantity, setQuantity] = useState<number>(1);
@@ -41,14 +41,18 @@ const ProductPage: React.FC = () => {
   return (
     <div className="productPage">
       <div className="imageGallery">
-        <Image src={imagen1} alt="Main Product" />
         <div className="thumbnailGallery">
           <Image src={imagen2} alt="Thumbnail 1" />
           <Image src={imagen3} alt="Thumbnail 2" />
           <Image src={imagen4} alt="Thumbnail 3" />
           <Image src={imagen5} alt="Thumbnail 4" />
         </div>
+
+        <div className="main-gallery">
+          <Image src={imagen1} alt="Main Product" />
+        </div>
       </div>
+
       <div className="productDetails">
         <h1 className="productTitle">Cotton jersey top</h1>
         
@@ -179,5 +183,3 @@ const ProductPage: React.FC = () => {
     </div>
   );
 };
-
-export default ProductPage;
