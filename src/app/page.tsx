@@ -5,6 +5,7 @@ import LocationMap from "@/app/components/LocationMap"
 import AdditionalInformation from "@/app/components/AdditionalInfo"
 import BrandLogos from "@/app/components/BrandLogos"
 import Footer from "@/app/components/Footer"
+import ProductPage from "@/app/components/ProductPage"
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <LocationMap />
       <BrandLogos />
       <Footer />
+      <ProductPage />
     </>
   );
 }
