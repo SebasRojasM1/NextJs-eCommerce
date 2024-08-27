@@ -1,0 +1,117 @@
+.product-slider {
+  margin: 30px 0;
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem;
+  
+      .tab {
+        padding: 0.5rem 1.5rem;
+        margin: 0 0.5rem;
+        cursor: pointer;
+        border: none;
+        font-size: 1.3rem;
+        font-weight: bold;
+        transition: 0.6s ease;
+                
+        &.active {
+          text-decoration: underline;
+          transition: 0.6s ease;
+          text-underline-offset: 8px;
+        }
+      }
+    }
+  
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+  
+      .product-item {
+        padding: 1rem;
+  
+        .product-image {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 1rem;
+        }
+  
+        .product-name {
+          font-size: 1.1rem;
+          margin-bottom: 0.5rem;
+        }
+  
+        .product-price {
+          font-size: 0.8rem;
+          color: #333;
+          margin-bottom: 0.5rem;
+          font-weight: bold;
+        }
+  
+        .product-discount {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 0.5rem;
+  
+          .discount {
+            background-color: orangered;
+            color: #fff;
+            padding: 0.2rem 0.5rem;
+            position: relative;
+            bottom: 375px;
+            left: 130px;
+            font-size: 10px;
+            border-radius: 10px;
+            font-weight: bold;
+          }
+  
+          .countdown {
+            font-size: 0.8rem;
+            position: relative;
+            bottom: 170px;
+            right: 20px;
+            padding: 6px 20px;
+            text-align: center;
+            color: orangered;
+            font-weight: bold;
+            background-color: white;
+          }
+        }
+  
+        .product-colors {
+          display: flex;
+          justify-content: flex-start;
+          gap: 0.5rem;
+  
+          .color-circle {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 1px solid #ccc;
+          }
+        }
+      }
+    }
+
+    .load-more{
+      display: flex;
+      justify-content: center;
+      margin: 30px auto;
+      text-align: center;
+      border: 1px solid black;
+      border-radius: 4px;
+      padding: 9px 20px;
+      width: 130px;
+      font-size: 13px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.6s ease;
+
+      &:hover{
+        transition: 0.6s ease;
+        background-color: black;
+        color: white;
+      }
+    }
+  }

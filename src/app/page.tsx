@@ -1,6 +1,7 @@
 import Header from "@/app/components/Header"
 import Slider from "@/app/components/Slider"
 import SeasonCollection from "@/app/components/SeasonCollection"
+import ProductList from "@/app/components/ProductList"
 import DiscountSection from "@/app/components/DiscountSection"
 import LocationMap from "@/app/components/LocationMap"
 import AdditionalInformation from "@/app/components/AdditionalInfo"
@@ -14,7 +15,7 @@ export default function Home() {
       <Header />
       <Slider />
       <SeasonCollection />
-      
+      <ProductList />
       <DiscountSection />
       <AdditionalInformation />
       <LocationMap />
