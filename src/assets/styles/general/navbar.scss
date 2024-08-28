@@ -1,0 +1,64 @@
+.navbar {
+    width: 100%;
+    background-color: white;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #ddd;
+  }
+  
+  .navList {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+  }
+  
+  .navItem {
+    position: relative;
+  
+    a {
+      text-decoration: none;
+      color: black;
+      font-weight: bold;
+      padding: 10px 15px;
+    }
+  
+    &:hover .dropdown {
+      display: block;
+    }
+  }
+  
+  .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 13px;
+    background-color: rgb(211, 211, 211);
+    list-style: none;
+    border-radius: 4px;
+
+    &:nth-child(1){
+      left: 13px;
+    }
+
+    &:nth-child(2){
+      left: 2px;
+    }
+  
+    li {
+      transition: 0.3s ease;
+      padding: 7px 0;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+      }
+
+      &:hover {
+        background-color: #f1f1f1;
+        transition: 0.3s ease
+      }
+    }
+  }
+  
