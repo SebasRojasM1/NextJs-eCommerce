@@ -7,21 +7,27 @@ import LocationMap from "@/app/components/LocationMap"
 import AdditionalInformation from "@/app/components/AdditionalInfo"
 import BrandLogos from "@/app/components/BrandLogos"
 import Footer from "@/app/components/Footer"
-import ProductPage from "@/app/components/ProductPage"
 
 export default function Home() {
   return (
-    <>{/* Aqui se pondrán los componentes que harán parte del HOME, y Layout hace que sea el Home de esta pagina */}
-      <Header />
-      <Slider />
-      <SeasonCollection />
-      <ProductList />
-      <DiscountSection />
-      <AdditionalInformation />
-      <LocationMap />
-      <BrandLogos />
-      <Footer />
-      <ProductPage />
+    <>
+      <header>
+        <Header />
+      </header>
+      
+      <main>
+        <Slider />
+        <SeasonCollection />
+        <ProductList />
+        <DiscountSection />
+        <AdditionalInformation />
+        <LocationMap />
+        <BrandLogos />
+      </main>
+      
+      <footer>
+        <Footer />
+      </footer>
     </>
   );
 }

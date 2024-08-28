@@ -1,14 +1,14 @@
 import React from 'react';
-import '@/assets/styles/Home/footer.scss';
+import '@/assets/styles/general/footer.scss';
 import Image from 'next/image';
-import Logo from "@/assets/img/general/logoCommerce.png"
+import Logo from "@/assets/img/general/logos/logoCommerce.png"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX, faCaretDown} from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF , faInstagram, faTiktok, faPinterest} from '@fortawesome/free-brands-svg-icons';
-import AmexLogo from "@/assets/img/home/logos/amexLogo.png"
-import MasterCardLogo from "@/assets/img/home/logos/MasterCardLogo.svg"
-import PaypalLogo from "@/assets/img/home/logos/PaypalLogo.png"
-import VisaLogo from "@/assets/img/home/logos/visaLogo.png"
+import AmexLogo from "@/assets/img/general/logos/amexLogo.png"
+import MasterCardLogo from "@/assets/img/general/logos/MasterCardLogo.svg"
+import PaypalLogo from "@/assets/img/general/logos/PaypalLogo.png"
+import VisaLogo from "@/assets/img/general/logos/visaLogo.png"
 
 export default function Footer() {
     return (

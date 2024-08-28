@@ -1,8 +1,8 @@
 import Navbar from '@/app/components/Navbar';
-import "@/assets/styles/Home/header.scss"
+import "@/assets/styles/general/header.scss"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMagnifyingGlass, faUser, faHeart, faCartShopping, faCaretDown} from '@fortawesome/free-solid-svg-icons';
-import Logo from "@/assets/img/general/logoCommerce.png"
+import Logo from "@/assets/img/general/logos/logoCommerce.png"
 import Image from 'next/image';
 
 

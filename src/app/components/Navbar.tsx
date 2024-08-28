@@ -1,5 +1,5 @@
 import Link from "next/link";
-import '@/assets/styles/Home/navbar.scss';
+import '@/assets/styles/general/navbar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown} from '@fortawesome/free-solid-svg-icons';
 
