@@ -1,0 +1,28 @@
+.imageGallery {
+    width: 50%;
+    display: flex;
+
+    .main-gallery{
+      width: 100%;
+    }
+
+    .thumbnailGallery {
+      display: flex;
+      width: 15%;
+      flex-direction: column;
+      margin-right: 10px;
+
+      img {
+        width: 100%;
+        border-radius: 4px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          transition: 0.3s ease;
+          transform: scale(1.08);
+        }
+      }
+    }
+  }
