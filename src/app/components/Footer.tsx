@@ -92,10 +92,10 @@ export default function Footer() {
 
       <div className="border-t border-gray-300 pt-4 mt-4 w-full flex justify-between flex-wrap">
         <p className="text-xs ml-20">© 2024 Ecomus Store. All Rights Reserved</p>
-        <div className="flex mr-16 space-x-5">
-          <Image src={VisaLogo} alt="Visa" className="w-8" />
-          <Image src={MasterCardLogo} alt="Mastercard" className="w-8" />
-          <Image src={PaypalLogo} alt="Paypal" className="w-8" />
+        <div className="flex mr-16 space-x-5 items-center">
+          <Image src={VisaLogo} alt="Visa" className="w-9 h-4" />
+          <Image src={MasterCardLogo} alt="Mastercard" className="w-4" />
+          <Image src={PaypalLogo} alt="Paypal" className="w-6" />
           <Image src={AmexLogo} alt="Amex" className="w-8" />
         </div>
       </div>

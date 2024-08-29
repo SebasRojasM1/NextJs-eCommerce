@@ -2,19 +2,13 @@
 
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faCrown,
-  faPrint,
-  faTriangleExclamation,
-  faCircleXmark,
-  faSquareMinus,
-} from "@fortawesome/free-solid-svg-icons";
+import { faCrown, faPrint, faTriangleExclamation, faCircleXmark, faSquareMinus} from "@fortawesome/free-solid-svg-icons";
 
 export default function MoreInfoProduct() {
   const [activeTab, setActiveTab] = useState("description");
 
   return (
-    <section className="border border-gray-300 w-[95%] mx-auto">
+    <section className="border border-gray-300 w-[95%] mx-auto my-[60px]" >
       <div className="flex border border-gray-300 mb-5">
         <button
           className={`px-5 py-2.5 text-lg transition-all ${

@@ -34,21 +34,23 @@ export default function BuyOptions({ colors }: BuyOptionsProps) {
 
   return (
     <>
-      <div className="flex gap-2 flex-col">
+      <div className="flex gap-2 flex-col my-[10px]">
         <p className="mb-1">Color:</p>
-        {colors.map((color, index) => (
-          <div
-            key={index}
-            style={{ backgroundColor: color }}
-            className={`w-6 h-6 rounded-full border cursor-pointer ${
-              selectedColor === color ? "border-black" : ""
-            }`}
-            onClick={() => handleColorChange(color)}
-          ></div>
-        ))}
+        <div className="flex items-center">
+          {colors.map((color, index) => (
+            <div
+              key={index}
+              style={{ backgroundColor: color }}
+              className={`w-6 h-6 rounded-full border cursor-pointer mr-[10px] ${
+                selectedColor === color ? "border-black" : ""
+              }`}
+              onClick={() => handleColorChange(color)}
+            ></div>
+          ))}
+        </div>
       </div>
 
-      <div className="my-2">
+      <div className="my-2 my-[10px]">
         <p className="mb-1">Size:</p>
         <div className="flex items-center">
           {["S", "M", "L", "XL"].map((size) => (
@@ -65,7 +67,7 @@ export default function BuyOptions({ colors }: BuyOptionsProps) {
         </div>
       </div>
 
-      <div className="flex flex-col my-2 w-1/5">
+      <div className="flex flex-col my-2 w-1/5 my-[15px]">
         <p>Quantity:</p>
         <div className="flex items-center bg-gray-100">
           <button
