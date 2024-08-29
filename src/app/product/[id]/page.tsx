@@ -19,21 +19,14 @@ export default function Product({ params }: ProductPageProps) {
   // Convertir id a número y buscar el producto correspondiente
   const product = products.find((product) => product.id === Number(id));
 
-  // Manejamos el caso en que el producto no se encuentra
+
   if (!product) {
     return <p>Producto no encontrado</p>;
   }
 
   return (
     <>
-      <section
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          padding: "20px",
-        }}
-      >
-        {/* Asegúrate de descomentar y ajustar el componente Gallery */}
+      <section style={{ display: "flex", justifyContent: "space-between", padding: "20px",}}>
         <Gallery images={product.image} />
         
         <div style={{ width: "50%", display: "flex", flexDirection: "column" }}>
@@ -43,9 +36,11 @@ export default function Product({ params }: ProductPageProps) {
             discount={product.discount}
             countdown={product.countdown}
           />
+
           <BuyOptions 
             colors={product.colors}
           />
+          
           <PaymentInfo />
         </div>
       </section>
