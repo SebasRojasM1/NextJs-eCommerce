@@ -1,17 +1,15 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBolt } from '@fortawesome/free-solid-svg-icons';
-import { FC } from 'react';
 
 
-type InfoProductProps = {
+interface InfoProductProps {
   name: string;
   price: string;
-  colors: string[];
   countdown?: string;
   discount?: number
 };
 
-const InfoProduct: FC<InfoProductProps> = ({ name, price, colors, discount, countdown }) => {
+export default function InfoProduct({ name, price, discount, countdown }: InfoProductProps) {
   return (
     <>
       <h1 className="text-2xl font-bold">{name}</h1>
@@ -32,7 +30,7 @@ const InfoProduct: FC<InfoProductProps> = ({ name, price, colors, discount, coun
           <>
             <span className="line-through text-gray-500 mr-2">$10.00</span>
             <span className="text-white bg-red-500 rounded-full text-xs py-1 px-2 font-bold">
-              {discount}% OFF
+              {discount} OFF
             </span>
           </>
         )}
@@ -52,5 +50,3 @@ const InfoProduct: FC<InfoProductProps> = ({ name, price, colors, discount, coun
     </>
   );
 };
-
-export default InfoProduct;

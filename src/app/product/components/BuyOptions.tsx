@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTruck, faShare, faDroplet, faCircleQuestion, faHeart, faArrowsTurnRight } from "@fortawesome/free-solid-svg-icons";
 
-// Asumiendo que los colores serán recibidos como un prop para este ejemplo
 interface BuyOptionsProps {
   colors: string[];
 }

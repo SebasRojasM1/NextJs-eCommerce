@@ -3,13 +3,13 @@
 import React, { useState } from 'react';
 import '@/assets/styles/Home/productList.scss';
 import Image from 'next/image';
-import image1 from "@/assets/img/home/seller/bestSeller1.png"
-import image2 from "@/assets/img/home/seller/bestSeller2.png"
-import image3 from "@/assets/img/home/seller/bestSeller3.png"
-import image4 from "@/assets/img/home/seller/bestSeller4.png"
-import image5 from "@/assets/img/home/seller/bestSeller5.png"
-import image6 from "@/assets/img/home/seller/bestSeller6.png"
-import image7 from "@/assets/img/home/seller/bestSeller7.png"
+import image1 from "@/assets/img/general/products/1/id1_1.png"
+import image2 from "@/assets/img/general/products/2/id2_1.png"
+import image3 from "@/assets/img/general/products/3/id3_1.png"
+import image4 from "@/assets/img/general/products/4/id4_1.png"
+import image5 from "@/assets/img/general/products/5/id5_1.png"
+import image6 from "@/assets/img/general/products/6/id6_1.png"
+import image7 from "@/assets/img/general/products/7/id7_1.png"
 
 
 const products = [

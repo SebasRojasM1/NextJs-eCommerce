@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX, faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faFacebookF, faInstagram, faTiktok, faPinterest } from '@fortawesome/free-brands-svg-icons';
 import AmexLogo from '@/assets/img/general/logos/amexLogo.png';
-import MasterCardLogo from '@/assets/img/general/logos/MasterCardLogo.svg';
+import MasterCardLogo from '@/assets/img/general/logos/mastercard-logo.png';
 import PaypalLogo from '@/assets/img/general/logos/PaypalLogo.png';
 import VisaLogo from '@/assets/img/general/logos/visaLogo.png';
 
@@ -94,7 +94,7 @@ export default function Footer() {
         <p className="text-xs ml-20">© 2024 Ecomus Store. All Rights Reserved</p>
         <div className="flex mr-16 space-x-5 items-center">
           <Image src={VisaLogo} alt="Visa" className="w-9 h-4" />
-          <Image src={MasterCardLogo} alt="Mastercard" className="w-4" />
+          <Image src={MasterCardLogo} alt="Mastercard" className="w-8" />
           <Image src={PaypalLogo} alt="Paypal" className="w-6" />
           <Image src={AmexLogo} alt="Amex" className="w-8" />
         </div>

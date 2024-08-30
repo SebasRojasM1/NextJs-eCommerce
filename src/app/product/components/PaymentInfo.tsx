@@ -1,6 +1,6 @@
 import React from "react";
 import AmexLogo from "@/assets/img/general/logos/amexLogo.png";
-import MasterCardLogo from "@/assets/img/general/logos/MasterCardLogo.svg";
+import MasterCardLogo from "@/assets/img/general/logos/mastercard-logo.png";
 import PaypalLogo from "@/assets/img/general/logos/PaypalLogo.png";
 import VisaLogo from "@/assets/img/general/logos/visaLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -49,14 +49,12 @@ export default function PaymentInfo() {
           <Image
             src={PaypalLogo}
             alt="Paypal"
-            width={100}
-            height={100}
             className="w-8 mx-2.5 p-2.5 bg-gray-100 rounded"
           />
           <Image
             src={MasterCardLogo}
             alt="Mastercard"
-            className="w-12 mx-2.5 p-2.5 bg-gray-100 rounded"
+            className="w-10 mx-2.5 p-2.5 bg-gray-100 rounded"
           />
           <Image
             src={AmexLogo}

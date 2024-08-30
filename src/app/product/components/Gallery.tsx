@@ -1,27 +1,39 @@
-import Image from "next/image";
-import { FC } from "react";
+import Image, { StaticImageData } from "next/image";
+import { useState } from "react";
 
-type GalleryProps = {
-    images: string;
+interface GalleryProps {
+  images: StaticImageData[];
 };
 
-const Gallery: FC<GalleryProps> = ({ images }) => {
+export default function Gallery({ images }: GalleryProps) {
 
-    return (
-        <div className="flex w-1/2">
-            <div className="flex flex-col w-1/6 mr-2">
-                {/* Aquí podrías agregar miniaturas adicionales si tienes más imágenes */}
-                <Image
-                    src={images}
-                    alt="Thumbnail"
-                    className="w-full rounded mb-2 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
-                />
-            </div>
-            <div className="w-full">
-                <Image src={images} alt="Main Product" />
-            </div>
-        </div>
-    );
+  const [selectedImage, setSelectedImage] = useState<StaticImageData>(images[0]);
+
+  return (
+    <div className="flex w-1/2">
+
+      <div className="flex flex-col w-1/6 mr-2">
+        {images.map((img, index) => (
+          <Image
+            key={index}
+            src={img}
+            alt={`Thumbnail ${index + 1}`}
+            className={`w-full rounded mb-2 cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105 ${
+              selectedImage === img ? "border-2 border-gray-500" : ""
+            }`}
+            onClick={() => setSelectedImage(img)}
+          />
+        ))}
+      </div>
+
+      {/* Imagen principal */}
+      <div className="w-full">
+        <Image
+          src={selectedImage}
+          alt="Main Product"
+          className="w-42 rounded mx-10"
+        />
+      </div>
+    </div>
+  );
 };
-
-export default Gallery;
