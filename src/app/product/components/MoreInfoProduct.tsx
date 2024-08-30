@@ -94,31 +94,31 @@ export default function MoreInfoProduct() {
             <h4 className="font-bold mb-2.5">Materials Care</h4>
             <ul>
               <li className="my-4 text-base mx-2.5 flex items-center">
-                <span className="border border-black rounded-full p-1.5 mr-2.5">
+                <span className="border border-black rounded-full px-2.5 py-1.5 mr-2.5">
                   <FontAwesomeIcon icon={faCrown} />
                 </span>
                 Machine wash max. 30ºC. Short spin.
               </li>
               <li className="my-4 text-base mx-2.5 flex items-center">
-                <span className="border border-black rounded-full p-1.5 mr-2.5">
+                <span className="border border-black rounded-full px-2.5 py-1.5 mr-2.5">
                   <FontAwesomeIcon icon={faPrint} />
                 </span>
                 Iron maximum 110ºC.
               </li>
               <li className="my-4 text-base mx-2.5 flex items-center">
-                <span className="border border-black rounded-full p-1.5 mr-2.5">
+                <span className="border border-black rounded-full px-2.5 py-1.5 mr-2.5">
                   <FontAwesomeIcon icon={faTriangleExclamation} />
                 </span>
                 Do not bleach/bleach.
               </li>
               <li className="my-4 text-base mx-2.5 flex items-center">
-                <span className="border border-black rounded-full p-1.5 mr-2.5">
+                <span className="border border-black rounded-full px-2.5 py-1.5 mr-2.5">
                   <FontAwesomeIcon icon={faCircleXmark} />
                 </span>
                 Do not dry clean.
               </li>
               <li className="my-4 text-base mx-2.5 flex items-center">
-                <span className="border border-black rounded-full p-1.5 mr-2.5">
+                <span className="border border-black rounded-full px-2.5 py-1.5 mr-2.5">
                   <FontAwesomeIcon icon={faSquareMinus} />
                 </span>
                 Tumble dry, medium heat.

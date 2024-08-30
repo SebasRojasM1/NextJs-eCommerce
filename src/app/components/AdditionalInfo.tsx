@@ -1,44 +1,49 @@
 import React from 'react';
-import '@/assets/styles/Home/additionalInfo.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCube, faCreditCard, faArrowLeft, faHeadset} from '@fortawesome/free-solid-svg-icons';
-
-
+import { faCube, faCreditCard, faArrowLeft, faHeadset } from '@fortawesome/free-solid-svg-icons';
 
 export default function AdditionalInformation() {
   return (
-    <section className='info-section'>
-        <div className='info-container'>
-            <div><FontAwesomeIcon icon={faCube} className='icon'/></div>
-            <div className='info'>
-                <h3>Free Shipping</h3>
-                <p>Free shipping over order $120</p>
-            </div>
+    <section className="flex items-center justify-evenly py-7">
+      <div className="flex items-center">
+        <div>
+          <FontAwesomeIcon icon={faCube} className="border border-gray-200 rounded-full p-4 text-2xl" />
         </div>
+        <div className="ml-4">
+          <h3 className="text-lg">Free Shipping</h3>
+          <p className="text-sm">Free shipping over order $120</p>
+        </div>
+      </div>
 
-        <div className='info-container'>
-            <div><FontAwesomeIcon icon={faCreditCard} className='icon'/></div>
-            <div className='info'>
-                <h3>Flexible Payment</h3>
-                <p>Pay with Multiple Credit Cards</p>
-            </div>
+      <div className="flex items-center">
+        <div>
+          <FontAwesomeIcon icon={faCreditCard} className="border border-gray-200 rounded-full p-4 text-2xl" />
         </div>
+        <div className="ml-4">
+          <h3 className="text-lg">Flexible Payment</h3>
+          <p className="text-sm">Pay with Multiple Credit Cards</p>
+        </div>
+      </div>
 
-        <div className='info-container'>
-            <div><FontAwesomeIcon icon={faArrowLeft} className='icon'/></div>
-            <div className='info'>
-                <h3>14 Day Returns</h3>
-                <p>Within 30 days for an exchange</p>
-            </div>
+      <div className="flex items-center">
+        <div>
+          <FontAwesomeIcon icon={faArrowLeft} className="border border-gray-200 rounded-full p-4 text-2xl" />
         </div>
-        
-        <div className='info-container'>
-            <div><FontAwesomeIcon icon={faHeadset} className='icon'/></div>
-            <div className='info'>
-                <h3>Premium Support</h3>
-                <p>Outstanding premium support</p>
-            </div>
+        <div className="ml-4">
+          <h3 className="text-lg">14 Day Returns</h3>
+          <p className="text-sm">Within 30 days for an exchange</p>
         </div>
+      </div>
+
+      <div className="flex items-center">
+        <div>
+          <FontAwesomeIcon icon={faHeadset} className="border border-gray-200 rounded-full p-4 text-2xl" />
+        </div>
+        <div className="ml-4">
+          <h3 className="text-lg">Premium Support</h3>
+          <p className="text-sm">Outstanding premium support</p>
+        </div>
+      </div>
     </section>
   );
-};
+}
