@@ -1,0 +1,41 @@
+.mapContainer {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    background-color: #fff;
+    border-radius: 8px;
+  
+    .storeInfo {
+      position: relative;
+      width: 100%;
+      padding: 25px 30px;
+      right: 80%;
+      height: 75%;
+      top: 120px;
+      background-color: white;
+      z-index: 5;
+  
+      h2 {
+        margin-bottom: 1rem;
+        font-size: 18px;
+        width: 100%;
+      }
+  
+      p {
+        margin-bottom: 0.5rem;
+        font-size: 10px;
+        width: 100%;
+      }
+  
+      .directionsButton {
+        display: inline-block;
+        margin-top: 1rem;
+        color: black;
+        font-size: 10px;
+        cursor: pointer;
+        text-decoration: underline;      
+        text-underline-offset: 4px;
+        font-weight: bold;
+      }
+    }
+  }
